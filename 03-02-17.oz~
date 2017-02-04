@@ -1,0 +1,13 @@
+declare Six = 6
+declare Five = 5
+declare proc {Foo X R}
+	   local Five in
+	      Five = 6
+	      R = X + Five + Six
+	   end
+	end
+
+local R in
+   {Foo 100 R}
+   {Browse r}
+end
